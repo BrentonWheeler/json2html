@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>JSON to HTML</title>
+</head>
+
+<body>
+    <div style="display:flex; flex-direction: column; height: calc(100vh - 16px)">
+        <div style="max-height: 15vh">
+            <h1 style="text-align: center;">JSON to interactive HTML</h1>
+        </div>
+        <div style="display: flex; justify-content: space-around">
+            <div>
+                <h3 style="text-align: center;">Before (paste json)</h3>
+                <textarea id="input" name="input" style="width: 48vw; height: 80vh; padding: 0; margin: 0;"></textarea>
+            </div>
+            <div style="display: flex; flex-direction: column; ">
+                <h3 style="text-align: center;">After (copy html)</h3>
+                <textarea id="output" name="output"
+                    style="width: 48vw; height: 15vh; padding: 0; margin: 0;"></textarea>
+                <h3 style="text-align: center;">Preview</h3>
+                <div style="width: 48vw; height: 60vh; padding: 0; margin: 0;">
+                    <div id="preview" style="height: 100%; width: 100%; overflow: auto;">
+                        <div id="preview" style="position:fixed;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
